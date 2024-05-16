@@ -1,0 +1,39 @@
+.home-div-container {
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px; /* Añade bordes redondeados */
+    font-family: Arial, sans-serif; /* Establece una fuente por defecto */
+  }
+  
+  h1 {
+    text-align: center; /* Centra el título */
+    color: #333; /* Color del título */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 20px;
+    padding: 20px; /* Aumenta el padding para mayor espacio interno */
+    border-bottom: 1px solid #ccc;
+    border-radius: 8px; /* Añade bordes redondeados a los items */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Añade una sombra ligera */
+  }
+  
+  .contact-details h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em; /* Aumenta el tamaño de la fuente del nombre */
+    color: #007BFF; /* Cambia el color del nombre */
+  }
+  
+  .contact-details p {
+    margin: 5px 0;
+    color: #555; /* Color del texto */
+  }
+  

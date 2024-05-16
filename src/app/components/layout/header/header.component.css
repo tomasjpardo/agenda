@@ -1,0 +1,24 @@
+h1 {
+    font-size: 80px;
+    font-family: "Sans Serif";
+    color: rgb(248, 244, 244);
+    background-image: linear-gradient(to right, red, blue);
+    text-align: center;
+}
+
+header {
+    font-size: 15px;
+    font-family: "Sans Serif";
+    color: rgb(60, 52, 209);
+    text-align: center;
+}
+
+header .buttons-container {
+    display: flex;
+    justify-content: center;
+}
+
+header button {
+    margin: 0 10px;
+    padding: 20px 20px;
+}

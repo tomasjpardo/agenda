@@ -1,0 +1,25 @@
+<div class="home-div-container">
+    <app-layout-header></app-layout-header>
+    <h1>Lista de Contactos</h1>
+    <div *ngIf="contacts && contacts.length; else noContacts">
+      <!-- Lista de contactos -->
+      <ul class="contact-list">
+        <li *ngFor="let contact of contacts" class="contact-item">
+          <!-- Detalles de cada contacto -->
+          <div class="contact-details">
+            <h2>{{ contact.name }}</h2>
+            <p><strong>Teléfono:</strong> {{ contact.phone }}</p>
+            <p><strong>Email:</strong> {{ contact.email }}</p>
+            <p><strong>Dirección:</strong> {{ contact.address }}</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <button (click)="refreshContacts()">recargar página</button>
+    <ng-template #noContacts>
+      <!-- Mensaje cuando no hay contactos -->
+      <p>No hay contactos disponibles.</p>
+    </ng-template>
+    <app-layout-footer></app-layout-footer>
+  </div>
+  

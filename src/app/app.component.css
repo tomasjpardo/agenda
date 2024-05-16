@@ -1,0 +1,17 @@
+h1 {
+    color: white;
+    background: blue;
+    font-family: Arial, sans-serif;
+    font-size: 250%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: rgb(0, 255, 4);
+    background: black;
+    font-family: Arial, sans-serif;
+    font-size: 160%;
+    padding: 20px;
+    border-radius: 10px;
+}

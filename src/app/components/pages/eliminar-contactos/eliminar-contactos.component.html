@@ -1,0 +1,29 @@
+<div class="home-div-container">
+    <app-layout-header></app-layout-header>
+    
+    <div *ngIf="selectedContact" id="confirmation-dialog" class="confirmation-dialog">
+      <p>¿Estás seguro de que quieres borrar el contacto con ID: {{ selectedContact.id }}?</p>
+      <p>Esta acción es irreversible.</p>
+      <div class="button-group">
+        <button class="delete-button" (click)="confirmDelete()">Borrar</button>
+        <button class="cancel-button" (click)="selectedContact = null">No borrar</button>
+      </div>
+    </div>
+    
+    <h1>Haz clic sobre el contacto a borrar</h1>
+    
+    <div class="contact-list">
+      <div *ngFor="let contact of contacts" class="contact-item" (click)="selectContact(contact)">
+        <div class="contact-details">
+          <h2>{{ contact.name }}</h2>
+          <p><strong>ID:</strong> {{ contact.id }}</p>
+          <p><strong>Teléfono:</strong> {{ contact.phone }}</p>
+          <p><strong>Email:</strong> {{ contact.email }}</p>
+          <p><strong>Dirección:</strong> {{ contact.address }}</p>
+        </div>
+      </div>
+    </div>
+  
+    <app-layout-footer></app-layout-footer>
+  </div>
+  

@@ -1,0 +1,6 @@
+p {
+    font-size: 20px;
+    color: white;
+    background-image: linear-gradient(to right, red, blue);
+    text-align: center;
+}

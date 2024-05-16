@@ -1,0 +1,6 @@
+<ul class="nav-ul">
+    <li *ngFor="let option of options" class="nav__menu-item"> 
+     <button class=" click "><a [routerLink]="option.link"> {{ option.title }} 
+     </a></button>     
+    </li>
+</ul>
