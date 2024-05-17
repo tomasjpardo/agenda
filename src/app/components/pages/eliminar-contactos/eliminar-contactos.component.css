@@ -23,6 +23,7 @@
     flex: 1 1 calc(50% - 20px);
     margin-bottom: 20px;
     padding: 20px;
+    background-color: bisque;
     border-bottom: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
