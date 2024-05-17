@@ -15,6 +15,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class VerContactosComponent implements OnInit {
   contacts: any[] = [];
   sortOrder: string = 'id'; // Default sort order
+  filter: string | null = null;
+  id: string | null = null;
 
   constructor(
     private route: ActivatedRoute,
@@ -24,6 +26,8 @@ export class VerContactosComponent implements OnInit {
 
   ngOnInit(): void {
     this.sortOrder = this.route.snapshot.queryParamMap.get('sortOrder') || 'id';
+    this.filter = this.route.snapshot.queryParamMap.get('filter') || '';
+    this.id = this.route.snapshot.queryParamMap.get('id') || '';
     this.loadContacts();
   }
 

@@ -3,7 +3,7 @@
   width: 80%;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: #faf4f4ee;
   border-radius: 8px;
   font-family: Arial, sans-serif;
 }
@@ -42,6 +42,7 @@ li {
   margin-bottom: 20px;
   padding: 10px;
   border-bottom: 1px solid #ccc;
+  background-color: rgb(220, 155, 230);
 }
 
 p {

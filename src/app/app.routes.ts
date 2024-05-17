@@ -15,6 +15,10 @@ export const routes: Routes = [
         component: CrearContactosComponent,
     },
     {
+        path: 'ver-contactos/:id',
+        component: VerContactosComponent,
+    },
+    {
         path: 'ver-contactos',
         component: VerContactosComponent,
     },
